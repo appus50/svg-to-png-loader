@@ -68,13 +68,7 @@ export default function (content) {
     });
   }))
     .then((results) => {
-      let output = 'module.exports = {';
-      output += results.map((result) => {
-        const sizeKey = `${result.size.height}x${result.size.width}`;
-        return `"${sizeKey}": __webpack_public_path__ + "${result.outputPath}"`;
-      }).join(',');
-      output += '};';
-      callback(null, output);
+      callback(null, content);
     })
     .catch((error) => {
       callback(error);
