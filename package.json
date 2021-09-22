@@ -1,6 +1,6 @@
 {
   "name": "svg-to-png-loader",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "webpack loader which converts SVG files to PNG files",
   "license": "MIT",
   "repository": "github1/svg-to-png-loader",
@@ -9,9 +9,9 @@
   },
   "homepage": "https://github.com/github1/svg-to-png-loader#readme",
   "author": "John Collier <john.collier4@gmail.com>",
-  "main": "lib/index.js",
+  "main": "output/index.js",
   "files": [
-    "lib"
+    "output"
   ],
   "engines": {
     "node": ">=10.12.0"
@@ -42,10 +42,10 @@
   },
   "scripts": {
     "prepare": "npm run build",
-    "clean": "rimraf lib/",
+    "clean": "rimraf output/",
     "lint": "eslint src",
     "test": "npm run lint && cross-env BABEL_ENV=test npm run build && nyc ava --verbose",
-    "build": "babel src/ --out-dir lib/",
+    "build": "babel src/ --out-dir output/",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
