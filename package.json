@@ -3,11 +3,11 @@
   "version": "4.0.2",
   "description": "webpack loader which converts SVG files to PNG files",
   "license": "MIT",
-  "repository": "github1/svg-to-png-loader",
+  "repository": "appus50/svg-to-png-loader",
   "bugs": {
-    "url": "https://github.com/github1/svg-to-png-loader/issues"
+    "url": "https://github.com/appus50/svg-to-png-loader/issues"
   },
-  "homepage": "https://github.com/github1/svg-to-png-loader#readme",
+  "homepage": "https://github.com/appus50/svg-to-png-loader#readme",
   "author": "John Collier <john.collier4@gmail.com>",
   "main": "output/index.js",
   "files": [
