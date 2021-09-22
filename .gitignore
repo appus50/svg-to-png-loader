@@ -2,7 +2,6 @@
 .idea
 *.iml
 *.log
-lib
 node_modules
 .nyc_output
 coverage
